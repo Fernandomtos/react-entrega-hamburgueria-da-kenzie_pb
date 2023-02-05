@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "../Button";
 import { StyledForm } from "./style";
-import { ToastContainer, toast } from "react-toastify";
 
 export const InputSearch = ({ setSearch, typeBtn }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -10,7 +9,6 @@ export const InputSearch = ({ setSearch, typeBtn }) => {
     event.preventDefault();
     setSearch(filteredProducts);
     setFilteredProducts("");
-    toast.info("Item(s) Encontrado(s)!");
   };
 
   return (

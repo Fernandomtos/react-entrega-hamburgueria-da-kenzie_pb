@@ -1,8 +1,9 @@
 import { StyledButton } from "./style";
+import { ToastContainer, toast } from "react-toastify";
 
 export const Button = ({ id, clean, children, handleClick, typeBtn }) => {
   const toastSearch = () => {
-    console.log("PESQUISA REALIZADA COM SUCESSO!");
+    toast.info("Pesquisa realizada!");
   };
 
   return (
